@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Yogesh's BMI calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css"
+        integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css' )}}">
+</head>
+
+<body class="k">
+    <div class="parent">
+        <h1>BMI calculator</h1>
+        <div class="child1 child">
+            <form class="pure-form" method="POST" action="/">
+                Enter your Weights in kgs:<br>
+                <input type="text" name="weight"><br><br>
+                Enter your heights in cms:<br>
+                <input type="text" name="height"><br><br>
+                <button type="submit" class="pure-button pure-button-primary" value="submit">submit</button><br>
+            </form>
+            <br>
+        </div>
+
+        <div class="child2 child ">
+            <h3>BMI Categories:</h3>
+            <p>Underweight = <18.5 </p>
+                    <p>Normal weight=18.5–24.9 </p>
+                    <p>Overweight=25–29.9 </p>
+                    <p>Obesity=BMI of 30 or greater </p>
+
+        </div>
+        <br>
+        <div class="main">
+            <table style="width: 100%;">
+
+                <tr>
+                    <td> Your BMI is {{ bmi }}</td>
+                </tr>
+                <tr>
+                    <td>Your are {{ message }}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+    </div>
+
+</body>

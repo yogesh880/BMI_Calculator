@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+.k {
+    background-color: antiquewhite;
+}
+
+
+.main {
+    width: 94%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2%;
+    text-align: middle;
+    background-color: aliceblue;
+}
+
+.parent {
+    border-radius: 25px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    max-height: 50%;
+    background-color: brown;
+}
+
+.child {
+    border-radius: 25px;
+    width: 48%;
+    display: inline-table;
+}
+
+.child1 {
+    border-radius: 25px;
+    padding-top: 18px;
+    padding-bottom: 23px;
+    background-color: rgb(231, 147, 87);
+}
+
+.child2 {
+    border-radius: 25px;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    background-color: rgb(200, 168, 230);
+}
